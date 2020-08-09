@@ -3,7 +3,7 @@ import { Switch, Route } from "react-router";
 import Home from "./component/home";
 import About from "./component/about";
 import MovieEdit from "./component/movieEdit";
-import Login from './component/login/login'
+import LoginForm from './component/login/loginForm'
 
 
 const Routes = () => {
@@ -17,7 +17,7 @@ const Routes = () => {
         <About />
       </Route>
       <Route exact path="/login">
-        <Login />
+        <LoginForm />
       </Route>
       <Route exact path="/movielist">
         <MovieEdit />

@@ -2,7 +2,7 @@ import React, {useContext, useState} from 'react'
 import {LoginContext} from './loginContext'
 
 const LoginForm = () => {
-    const [user, setUser, loginState, setLoginState] = useContext(LoginContext);
+    const [user, , loginState, setLoginState] = useContext(LoginContext);
     const [inpName, setInpName] = useState("")
     const [inpPass, setInpPass] = useState("")
 
@@ -29,6 +29,7 @@ const LoginForm = () => {
         <>
         {loginState === false &&
         <div>
+            <p>defaul user "admin" pass "admin"</p>
             <form>
                 <label>Username : </label>
                 <input type="text" name="inpName" onChange={handleChangeName} value={inpName} />

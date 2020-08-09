@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 import logo from './img/logo.png'
 
 const Navi = () => {
-    const [user, setUser, loginState, setLoginState] = useContext(LoginContext);
+    const [, , loginState, ] = useContext(LoginContext);
 
     return(
         <>

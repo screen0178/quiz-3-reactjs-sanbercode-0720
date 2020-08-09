@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router } from "react-router-dom";
 import Routes from './routes'
 import Navi from './component/navi'
-import Landing from './component/landing'
+import {LoginProvider} from './component/login/loginContext'
 import './App.css';
 
 function Footer() {
@@ -17,8 +17,10 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Landing />
-        <Routes />
+        <LoginProvider>
+          <Navi />
+          <Routes />
+        </LoginProvider>
         <Footer />
       </div>
     </Router>
