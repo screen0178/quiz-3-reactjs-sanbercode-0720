@@ -6,7 +6,7 @@ export const LoginProvider = props => {
   const [user, setUser] = useState([
     { name: "admin", pass: "admin"},
   ])
-  const [loginState, setLoginState] = useState(false)
+  const [loginState, setLoginState] = useState(true)
 
   return (
     <LoginContext.Provider value={[user, setUser, loginState, setLoginState]}>
