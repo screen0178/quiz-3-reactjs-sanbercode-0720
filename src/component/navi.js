@@ -1,5 +1,5 @@
-import React, { Component,useContext } from 'react'
-import {LoginContext,LoginProvider} from './login/loginContext'
+import React, { useContext } from 'react'
+import {LoginContext} from './login/loginContext'
 import {Link} from 'react-router-dom';
 
 import logo from './img/logo.png'
